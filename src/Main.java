@@ -3082,7 +3082,7 @@ class ButtonListener47 implements ActionListener {
         frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.setSize(300, 400);
         JPanel panel = new JPanel();
-        String balance = "Savings account balance: $" + user.getChecking();
+        String balance = "Savings account balance: $" + user.getSavings();
         JLabel label = new JLabel(balance);
         panel.add(label);
         frame.add(panel);
@@ -3125,7 +3125,7 @@ class ButtonListener48 implements ActionListener {
         frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.setSize(300, 400);
         JPanel panel = new JPanel();
-        String balance = "Money Market account balance: $" + user.getChecking();
+        String balance = "Money Market account balance: $" + user.getMM();
         JLabel label = new JLabel(balance);
         panel.add(label);
         frame.add(panel);
@@ -3168,7 +3168,7 @@ class ButtonListener49 implements ActionListener {
         frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.setSize(300, 400);
         JPanel panel = new JPanel();
-        String balance = "Certificate of Deposit account balance: $" + user.getChecking();
+        String balance = "Certificate of Deposit account balance: $" + user.getCD();
         JLabel label = new JLabel(balance);
         panel.add(label);
         frame.add(panel);
